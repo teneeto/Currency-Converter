@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Currency converter app built in ALC 3.0 program.">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" type="text/css" href="public/css/style.css">
+    <title>Currency Converter</title>
+  </head>
+  <body>
+
+    <header>
+      <div>
+        <h1 id="home" onclick="home();">ALC #7days Challenge</h1>
+      </div>
+      <nav>
+        <a href="index.html">Home |</a>
+        <a href="#currency_converter">Currency Converter |</a>
+        <a href="#contact">Contact</a>
+        <a href="#contacts">Socialize</a>
+      </nav>
+    </header>
+    <div id="sect">
+      <div id="layout">
+        <p><span class="intro1a">Let's Convert Your Currency For You</span>
+
+          <br/>
+          <button class="submit convert" onclick=""><a href="#currency_converter">Convert Currency</a></submit>
+
+        </p>
+      </div>
+    </div>
+    <section>
+
+
+      <div id="currency_converter" class="section">
+           <h1><span>Currency Converter</span></h1>
+           <form id="currency-form">
+               <div class="input-field col s12">
+                 <div><strong>Current Currency</strong></div>
+                   <label for="current_amount">
+                       <small>Enter the amount</small>
+                   </label>
+                   <input type="text" id="current_amount" class="form-control form-control-sm">
+                   <label for="current_currency"><br>
+                       <small>Select Currency</small>
+                   </label>
+                   <select id="current_currency" class="form-control"></select>
+               </div>
+
+               <div class="input-field col s12">
+                   <div><strong>Equivalent Currency</strong></div>
+                   <label for="equivalent_currency">
+                       <small>Select Currency</small>
+                   </label>
+                   <select id="equivalent_currency" class="select"></select><br><br/>
+                   <label for="equivalent_amount">
+                       <small>Equivalent Amount</small>
+                   </label>
+                   <input type="text" id="equivalent_amount" class="form-control form-control-sm" readonly>
+               </div>
+               <input type="submit" id="submit_btn" class="btn submit btn-info" value="Convert">
+           </form>
+       </div>
+
+
+
+
+       <!-- Form section start -->
+      <div id="contact" class="section">
+           <h1><span>Contact Me</span></h1>
+
+           <svg class="face" height="100" width="100">
+               <circle cx="50" cy="50" r="50" fill="#FDD835"/>
+               <circle cx="30" cy="30" r="10" fill="#FFFFFF"/>
+               <circle cx="70" cy="30" r="10" fill="#FFFFFF"/>
+               <circle cx="30" cy="30" r="5" fill="#000000"/>
+               <circle cx="70" cy="30" r="5" fill="#000000"/>
+               <path d="M 30 70 q 20 20 40 0" stroke="#FFFFFF" stroke-width="5" fill="none" />
+           </svg>
+
+           <form>
+               <input name="name" placeholder="Name" type="text" required /><br/>
+               <input name="email" placeholder="Email" type="email" required /><br/>
+               <textarea name="message" placeholder="Message" required ></textarea>
+               <input type="submit" value="SEND" class="submit" />
+           </form>
+       </div>
+
+    </section>
+
+    <footer>
+      <div class="section" id="contacts">
+          <h1><span>Socialize</span></h1><br/>
+          <div>
+              <a href="https://github.com/teneeto/" target="_blank">
+                  <img alt="github" src="public/social_icons/github.png" />
+              </a>
+              <a href="https://twitter.com/teneetoe/">
+                  <img alt="twitter" src="public/social_icons/twitter.jpg"/>
+              </a>
+              <a href="https://instagram.com/teneeto/">
+                  <img alt="instagram" src="public/social_icons/instagram.png" />
+              </a>
+              <a href="https://facebook.com/teneetoe/">
+                  <img alt="facebook" src="public/social_icons/facebook.png" />
+              </a>
+              <a href="https://linkedin.com/in/etotaziba-olei-113099aa">
+                  <img alt="linkedin" src="public/social_icons/linkedin.png" />
+              </a>
+          </div>
+      </div>
+      <!-- Contacts section end -->
+
+      <div class="section copyright">
+          &copy; 2018 <a href="teneeto.com">teneeto.com</a>. All rights reserved.
+      </div>
+    </footer>
+    <!-- JAVASCRIPT -->
+    <script type="text/javascript" src="public/js/app.js"></script>
+  </body>
+</html>
